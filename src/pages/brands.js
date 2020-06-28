@@ -1,4 +1,5 @@
 import React from "react"
+import "../styles/shoppers.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -40,9 +41,16 @@ const Brands = () => {
           objectFit: "cover",
         }}
       >
-        <h1>{shoppers.allContentfulBrands.edges[0].node.brandsherotitle}</h1>
-        <p>{shoppers.allContentfulShoppers.edges[0].node.merchantherotext}</p>
+        <h1 style={{ maxWidth: "700px" }}>
+          {shoppers.allContentfulBrands.edges[0].node.brandsherotitle}
+        </h1>
       </div>
+
+      <div className="coming-soon">
+        <h1>Coming Soon</h1>
+      </div>
+
+      <Footer />
     </div>
   )
 }
