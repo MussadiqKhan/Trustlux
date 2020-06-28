@@ -42,7 +42,7 @@ const Header = () => {
           <Link to="/merchants">
             <li>Merchants</li>
           </Link>
-          <Link to="/bigdata-analytics/">
+          <Link to="/brands">
             <li>Brands</li>
           </Link>
           <a
