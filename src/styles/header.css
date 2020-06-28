@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Roboto" !important;
+  font-style: normal !important;
+  color: #0d0d0d;
+  font-size: 16px;
+  line-height: 30px !important;
+  letter-spacing: 1.1px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baskerville";
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  line-height: 32.3px;
+}
+.get-started {
+  border-radius: 20px;
+  padding: 20px;
+  background: transparent;
+  border: 1px solid white;
+  font-family: "Roboto";
+  margin-right: 10px;
+  color: white;
+  width: 150px;
+  height: 5%;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.get-started:focus {
+  outline: none;
+}
+.mobile {
+  display: none;
+}
+.get-started:hover {
+  background: white;
+  color: black;
+}
+nav {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+}
+.logo_large {
+  padding: 20px;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  padding: 25px 15px 15px 15px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+ul li:hover {
+  cursor: pointer;
+}
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.logo {
+  display: flex;
+  justify-content: start;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.active {
+  border-bottom: none !important;
+}
+@media screen and (max-width: 845px) {
+  nav {
+    display: block;
+  }
+  .mobile {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    width: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+  .active {
+    display: block;
+    border-bottom: none;
+  }
+  .logo_large,
+  .main {
+    display: none;
+  }
+}

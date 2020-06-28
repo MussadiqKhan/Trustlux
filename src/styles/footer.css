@@ -1,0 +1,33 @@
+.pages,
+.linked,
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.linked,
+.copy-right {
+  margin-top: 50px;
+}
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pages p {
+  padding: 0px 21px;
+}
+.svg {
+  margin-top: 50px;
+  display: flex;
+}
+.hr {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: center;
+}
