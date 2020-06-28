@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "../styles/footer.css"
 import stamp from "../../static/images/stamp.svg"
 
@@ -7,9 +8,15 @@ const Footer = () => {
     <div>
       <div className="footer">
         <div className="pages">
-          <p>SHOPPERS</p>
-          <p>MERCHANTS</p>
-          <p>BRANDS</p>
+          <Link to="/shoppers">
+            <p>SHOPPERS</p>
+          </Link>
+          <Link to="/merchants">
+            <p>MERCHANTS</p>
+          </Link>
+          <Link to="/brands">
+            <p>BRANDS</p>
+          </Link>
         </div>
         <div className="svg">
           <div className="hr">

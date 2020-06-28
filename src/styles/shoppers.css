@@ -410,6 +410,22 @@
   color: white;
 }
 
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 100px;
+}
+.coming-soon h1 {
+  font-family: "Baskerville";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 57px;
+  letter-spacing: 2.7px;
+  margin-bottom: 25px;
+  text-align: center;
+}
 @media screen and (max-width: 1050px) {
   .gallery {
     flex-direction: column-reverse;
