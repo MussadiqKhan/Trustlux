@@ -4,25 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-p {
-  font-family: "Roboto" !important;
-  font-style: normal !important;
-  color: #0d0d0d;
-  font-size: 16px;
-  line-height: 30px !important;
-  letter-spacing: 1.1px !important;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Baskerville";
-}
-a {
+nav a {
   color: white;
-  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+}
+.header_div {
+  position: relative;
+  z-index: 1000;
 }
 p {
   line-height: 32.3px;
@@ -30,7 +20,8 @@ p {
 .get-started {
   border-radius: 20px;
   padding: 20px;
-  background: transparent;
+  background: black !important;
+  opacity: 0.8 !important;
   border: 1px solid white;
   font-family: "Roboto";
   margin-right: 10px;
@@ -38,24 +29,24 @@ p {
   width: 150px;
   height: 5%;
   margin-top: 20px;
-  padding: 5px;
+  padding: 5px !important;
   cursor: pointer;
 }
 .get-started:focus {
   outline: none;
 }
 .mobile {
-  display: none;
+  display: none !important;
 }
 .get-started:hover {
-  background: white;
-  color: black;
+  background: white !important;
+  color: black !important;
 }
 nav {
-  display: flex;
-  background-color: black;
+  display: flex !important;
+  background-color: black !important;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -71,7 +62,7 @@ ul {
 }
 ul li {
   list-style: none;
-  padding: 25px 15px 15px 15px;
+  padding: 25px 15px 10px 15px;
   display: inline-block;
   font-size: 16px;
   font-weight: 300;
@@ -105,32 +96,32 @@ ul li:hover {
 }
 @media screen and (max-width: 845px) {
   nav {
-    display: block;
+    display: block !important;
   }
   .mobile {
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 20px;
   }
   .toggle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
   }
   ul {
-    width: 100%;
+    width: 100% !important;
     display: none;
   }
   ul li {
-    display: block;
-    text-align: center;
+    display: block !important;
+    text-align: center !important;
     padding: 20px;
   }
   .active {
-    display: block;
+    display: block !important;
     border-bottom: none;
   }
   .logo_large,
   .main {
-    display: none;
+    display: none !important;
   }
 }

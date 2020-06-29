@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="footer">
         <div className="pages">
           <Link to="/shoppers">
-            <p>SHOPPERS</p>
+            <p style={{ color: "#47474c" }}>SHOPPERS</p>
           </Link>
           <Link to="/merchants">
-            <p>MERCHANTS</p>
+            <p style={{ color: "#47474c" }}>MERCHANTS</p>
           </Link>
           <Link to="/brands">
-            <p>BRANDS</p>
+            <p style={{ color: "#47474c" }}>BRANDS</p>
           </Link>
         </div>
         <div className="svg">

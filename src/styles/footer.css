@@ -25,6 +25,9 @@
   margin-top: 50px;
   display: flex;
 }
+a {
+  color: #47474c;
+}
 .hr {
   display: flex;
   flex-direction: column;

@@ -3,57 +3,57 @@
   overflow: hidden;
   position: relative;
 }
+.content-main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  top: 20%;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
 video {
   object-fit: cover;
-  height: 720px;
+  height: 100vh;
   min-height: auto;
   transform: translate(-50%, -0%);
   top: 0%;
   left: 50%;
+  width: 100vw;
   position: relative;
   z-index: -1;
 }
 .stamp {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  margin-top: 100px;
-  text-align: center;
+  margin-bottom: 50px;
 }
 .text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
   max-width: 700px;
-  margin-top: 250px;
   font-size: 20px;
   text-align: center;
   color: white;
 }
-.text h1 {
-  margin-bottom: 50px;
+.text p {
+  margin-bottom: 20px !important;
 }
-.app {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  margin-top: 500px;
+.text h1 {
+  margin-bottom: 20px !important;
+  font-family: "Baskerville";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
   text-align: center;
-  z-index: 1;
+  letter-spacing: 2.7px;
+  color: #47474c;
+  margin-bottom: 60px;
+}
+
+.app {
 }
 
 .icons-margin {
@@ -199,8 +199,15 @@ video {
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 390px) {
   .app {
-    margin-top: 600px;
+    margin: 0 auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

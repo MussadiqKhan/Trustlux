@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "../styles/header.css"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 import logo from "../../static/images/logo.png"
 
@@ -17,6 +17,13 @@ const Header = () => {
     <div className="header">
       <Helmet>
         <script src="https://embed.typeform.com/embed.js"></script>
+        <link
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous"
+        ></link>
+
         <title>Trustlux</title>
       </Helmet>
       <nav>
@@ -46,7 +53,7 @@ const Header = () => {
             <li>Brands</li>
           </Link>
           <a
-            class="typeform-share button btn btn-normal rounded-50 mt-20 get-started mobile"
+            class="typeform-share  rounded-50 mt-20 get-started mobile"
             href="https://trustlux.typeform.com/to/K0Jg7M"
             data-mode="popup"
             style={{ margin: "0 auto", marginBottom: "30px" }}
@@ -55,7 +62,7 @@ const Header = () => {
           </a>
         </ul>
         <a
-          class="typeform-share button btn btn-normal rounded-50 mt-20 get-started main"
+          class="typeform-share  rounded-50 mt-20 get-started main"
           href="https://trustlux.typeform.com/to/K0Jg7M"
           data-mode="popup"
         >
